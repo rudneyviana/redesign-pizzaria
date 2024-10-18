@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 1920px;
+    height: 105px;
+    background: #F2F2F2;
+    box-shadow: 0px -20px 50px 0px rgba(24, 2, 2, 0.10) inset;
+}
+
+header>picture {
+    display: flex;
+    width: 144px;
+    height: 105px;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header>nav {
+    display: flex;
+    width: 1180px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+header>nav>a {
+    display: flex;
+    width: 102px;
+    height: 22px;
+    padding: 3px 5px 2px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+main {
+    width: 1920px;
+    height: 4886px;
+}
+
+main>section.header {
+    display: flex;
+    width: 1920px;
+    padding: 4.683px 560.228px 6.683px 560px;
+    justify-content: center;
+    align-items: center;
+    background: #CE032A;
+    box-shadow: 0px 15.203px 45.34px 0px rgba(0, 0, 0, 0.40);
+}
+
+main>section.header>p {
+    display: flex;
+    width: 799.772px;
+    height: 25.634px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21.972px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.456px;
+    /* 84% */
+}
+
+main>section.principal {
+    display: inline-flex;
+    height: 774px;
+    padding-left: 50px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+main>section.principal>div.destaque {
+    width: 886px;
+    height: 774px;
+}
+
+main>section.principal>div.destaque>h1 {
+    width: 925px;
+    color: #C20529;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 90.588px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120px;
+    /* 132.468% */
+}
+
+main>section.principal>div.destaque>p {
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 5.7px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 30.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70.068px;
+    /* 231.25% */
+}
+
+main>section.principal>div.destaque>button {
+    width: 321.217px;
+    height: 119px;
+    flex-shrink: 0;
+    border-radius: 831.336px;
+    background: #C20529;
+    color: #FFF;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 40.684px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 94.081px;
+    /* 231.25% */
+}
+
+main>section.pratos {}
+
+/*FALTA FAZER*/
+
+main>section.info {
+    display: flex;
+    width: 1920px;
+    padding-bottom: 77px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main>section.info>div {
+    width: 1920px;
+    height: 850px;
+}
+
+main>section.info>article {
+    display: flex;
+    width: 778px;
+    padding: 0px 0.166px 0.459px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main>section.info>article>h2 {
+    display: flex;
+    width: 777.834px;
+    height: 112px;
+    flex-direction: column;
+    justify-content: center;
+    color: #0A0A0A;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88.2px;
+    /* 105% */
+    letter-spacing: -4.2px;
+}
+
+main>section.info>article>p {
+    display: flex;
+    width: 746.151px;
+    height: 234px;
+    flex-direction: column;
+    justify-content: center;
+    color: #0A0A0A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 147.059% */
+}
+
+main>section.info>article>button {
+    width: 244.573px;
+    height: 88.541px;
+    border-radius: 999px;
+    background: #C20529;
+}
+
+main>section.eventos {
+    width: 1920px;
+    height: 1230px;
+    flex-shrink: 0;
+}
+
+main>section.eventos>article {
+    width: 722px;
+    height: 522px;
+    flex-shrink: 0;
+}
+
+main>section.eventos>article>h2 {
+    color: #000;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74px;
+    /* 105.714% */
+}
+
+main>section.eventos>article>p {
+    display: flex;
+    width: 534px;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 138.889% */
+}
+
+main>section.eventos>article>button {
+    width: 294px;
+    height: 89px;
+    flex-shrink: 0;
+    border-radius: 999px;
+    background: #C20529;
+}
+
+main>section.eventos>article>picture {
+    display: flex;
+    width: 937px;
+    height: 512px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+footer {
+    width: 1920px;
+    height: 498px;
+    background: #E8E8E8;
+}
+
+footer>div.cascavel {
+    width: 318px;
+    height: 225px;
+    flex-shrink: 0;
+}
+
+footer>div.cascavel>h3 {
+    display: flex;
+    width: 123px;
+    height: 17px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #605E5E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 70% */
+}
+
+footer>div.cascavel>p {
+    color: #605E5E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+}
+
+footer>div.foz-do-iguacu {
+    width: 241px;
+    height: 209px;
+    flex-shrink: 0;
+}
+
+footer>div.foz-do-iguacu>h3 {
+    color: var(--color-grey-37, #605E5E);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 70% */
+}
+
+footer>div.foz-do-iguacu>p {
+    color: var(--color-grey-37, #605E5E);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    /* 131.25% */
+}
