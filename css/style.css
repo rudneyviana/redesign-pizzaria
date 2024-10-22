@@ -6,8 +6,12 @@
 
 :root {
     --cor-preto: #282828;
-    --cor-vermelho: #CE032A;
     --cor-branco: #F2F2F2;
+    --cor-vermelho: #CE032A;
+    --cor-vermelho-escuro: #C20529;
+    
+    --font-serifada-01: Montserrat;
+    --font-serifada-02: "PT Serif";
 }
 
 a {
@@ -63,78 +67,73 @@ main {
 main>section.header {
     display: flex;
     width: 100%;
-    padding: 4.683px 560.228px 6.683px 560px;
+    padding: 4px;
     justify-content: center;
     align-items: center;
-    background: #CE032A;
+    background: var(--cor-vermelho);
     box-shadow: 0px 15.203px 45.34px 0px rgba(0, 0, 0, 0.40);
 }
 
 main>section.header>p {
     display: flex;
-    flex-shrink: 0;
     color: var(--cor-branco);
     text-align: center;
-    font-size: 21.972px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18.456px;
-    /* 84% */
+    font-size: 22px;
 }
 
 main>section.principal {
     display: inline-flex;
-    height: 774px;
+    width: 100%;
+    height: 100vh;
     padding-left: 50px;
-    justify-content: flex-end;
+    /*justify-content: flex-end;
     align-items: flex-start;
     gap: 6px;
-    flex-shrink: 0;
+    flex-shrink: 0;*/
 }
 
 main>section.principal>div.destaque {
-    width: 886px;
-    height: 774px;
+    width: 50%;
+    height: 50%;
+    display: flexbox;
 }
 
-main>section.principal>div.destaque>h1 {
+main>section.principal>div.destaque>article>h1 {
     width: 925px;
-    color: #C20529;
+    color: var(--cor-vermelho-escuro);
     text-align: center;
-    font-family: "PT Serif";
-    font-size: 90.588px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: var(--font-serifada-02);
+    font-size: 90px;
     line-height: 120px;
     /* 132.468% */
 }
 
-main>section.principal>div.destaque>p {
-    color: #000;
+main>section.principal>div.destaque>article>p {
+    color: var(--cor-preto);
     text-align: center;
     text-shadow: 0px 4px 5.7px rgba(0, 0, 0, 0.25);
-    font-family: Montserrat;
     font-size: 30.3px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 70.068px;
-    /* 231.25% */
 }
 
-main>section.principal>div.destaque>button {
-    width: 321.217px;
-    height: 119px;
-    flex-shrink: 0;
-    border-radius: 831.336px;
-    background: #C20529;
-    color: #FFF;
-    text-align: center;
-    font-family: "PT Serif";
-    font-size: 40.684px;
-    font-style: normal;
+main>section.principal>div.destaque>article>button {
+    width: 240px;
+    height: 100px;
+    border-radius: 99px;
+    background: var(--cor-vermelho-escuro);
+    font-size: 40px;
     font-weight: 700;
-    line-height: 94.081px;
-    /* 231.25% */
+    border: none;
+}
+
+main>section.principal>div.destaque>article>button>a {
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--font-serifada-02);
+}
+
+main>section.principal>div.destaque>img {
+    display: inline;
+    width: 40vh;
 }
 
 main>section.pratos {}
