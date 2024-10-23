@@ -31,6 +31,7 @@ header {
     box-shadow: 0px -20px 50px 0px rgba(24, 2, 2, 0.10) inset;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 header>picture {
@@ -142,14 +143,14 @@ main>section.pratos {}
 
 main>section.info {
     display: flex;
-    width: 1920px;
+    width: 100%;
     padding-bottom: 77px;
     flex-direction: column;
     align-items: flex-start;
 }
 
 main>section.info>div {
-    width: 1920px;
+    width: 100%;
     height: 850px;
 }
 
