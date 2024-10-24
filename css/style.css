@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +7,16 @@
 }
 
 :root {
-    --cor-preto: #282828;
+    --cor-preto: #0A0A0A;
     --cor-branco: #F2F2F2;
+    --cor-cinza: #E8E8E8;
+    --cor-cinza-escuro: #605E5E;
     --cor-vermelho: #CE032A;
     --cor-vermelho-escuro: #C20529;
-    
-    --font-serifada-01: Montserrat;
-    --font-serifada-02: "PT Serif";
+    --cor-dourado: #CF9629;
+
+    --font-sans-serif-01: "Montserrat", sans-serif;
+    --font-serifada-01: "PT Serif";
 }
 
 a {
@@ -67,7 +72,7 @@ main {
 
 main>section.header {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 4px;
     justify-content: center;
     align-items: center;
@@ -83,42 +88,51 @@ main>section.header>p {
 }
 
 main>section.principal {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     height: 100vh;
-    padding-left: 50px;
-    /*justify-content: flex-end;
-    align-items: flex-start;
-    gap: 6px;
-    flex-shrink: 0;*/
 }
 
 main>section.principal>div.destaque {
-    width: 50%;
-    height: 50%;
-    display: flexbox;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+main>section.principal>div.destaque>img {
+    min-width: 800px;
+    height: 700px;
+}
+
+main>section.principal>div.destaque>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 main>section.principal>div.destaque>article>h1 {
     width: 925px;
     color: var(--cor-vermelho-escuro);
-    text-align: center;
-    font-family: var(--font-serifada-02);
+    font-family: var(--font-serifada-01);
     font-size: 90px;
-    line-height: 120px;
-    /* 132.468% */
+    text-align: center;
 }
 
 main>section.principal>div.destaque>article>p {
     color: var(--cor-preto);
+    font-size: 30px;
+    font-family: var(--font-sans-serif-01);
     text-align: center;
     text-shadow: 0px 4px 5.7px rgba(0, 0, 0, 0.25);
-    font-size: 30.3px;
 }
 
-main>section.principal>div.destaque>article>button {
-    width: 240px;
-    height: 100px;
+.botao-link {
+    width: fit-content;
+    height: fit-content;
     border-radius: 99px;
     background: var(--cor-vermelho-escuro);
     font-size: 40px;
@@ -126,15 +140,17 @@ main>section.principal>div.destaque>article>button {
     border: none;
 }
 
-main>section.principal>div.destaque>article>button>a {
-    color: var(--cor-branco);
-    text-align: center;
-    font-family: var(--font-serifada-02);
+.link-borda {
+    border: var(--cor-branco) solid 2px;
+    border-radius: 99px;
+    margin: 10px;
+    padding: 10px 20px;
 }
 
-main>section.principal>div.destaque>img {
-    display: inline;
-    width: 40vh;
+.link-botao {
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--font-serifada-01);
 }
 
 main>section.pratos {}
@@ -142,117 +158,84 @@ main>section.pratos {}
 /*FALTA FAZER*/
 
 main>section.info {
-    display: flex;
     width: 100%;
-    padding-bottom: 77px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 main>section.info>div {
     width: 100%;
-    height: 850px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
 }
 
-main>section.info>article {
+main>section.info>div>article {
+    width: 800px;
+    height: 500px;
     display: flex;
-    width: 778px;
-    padding: 0px 0.166px 0.459px 0px;
     flex-direction: column;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
 }
 
-main>section.info>article>h2 {
+main>section.info>div>article>h2 {
     display: flex;
-    width: 777.834px;
-    height: 112px;
-    flex-direction: column;
-    justify-content: center;
-    color: #0A0A0A;
+    color: var(--cor-preto);
     text-align: center;
-    font-family: "PT Serif";
+    font-family: var(--font-serifada-01);
     font-size: 84px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 88.2px;
-    /* 105% */
-    letter-spacing: -4.2px;
 }
 
-main>section.info>article>p {
-    display: flex;
-    width: 746.151px;
-    height: 234px;
-    flex-direction: column;
-    justify-content: center;
-    color: #0A0A0A;
+main>section.info>div>article>p {
+    color: var(--cor-preto);
     text-align: center;
-    font-family: Montserrat;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    /* 147.059% */
-}
-
-main>section.info>article>button {
-    width: 244.573px;
-    height: 88.541px;
-    border-radius: 999px;
-    background: #C20529;
+    font-family: var(--font-sans-serif-01);
+    font-size: 22px;
 }
 
 main>section.eventos {
-    width: 1920px;
-    height: 1230px;
-    flex-shrink: 0;
+    width: 100%;
+    height: fit-content;
 }
 
 main>section.eventos>article {
     width: 722px;
     height: 522px;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main>section.eventos>article>h2 {
-    color: #000;
+    color: var(--cor-preto);
     text-align: center;
-    font-family: "PT Serif";
+    font-family: var(--font-serifada-01);
     font-size: 70px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 74px;
-    /* 105.714% */
 }
 
 main>section.eventos>article>p {
     display: flex;
-    width: 534px;
-    height: 60px;
     flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
+    margin: 15px 0px;
+    color: var(--cor-preto);
     text-align: center;
-    font-family: Montserrat;
+    font-family: var(--font-sans-serif-01);
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 25px;
     /* 138.889% */
 }
 
-main>section.eventos>article>button {
-    width: 294px;
-    height: 89px;
-    flex-shrink: 0;
-    border-radius: 999px;
-    background: #C20529;
+.container-botoes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-main>section.eventos>article>picture {
+main>section.eventos>picture {
     display: flex;
     width: 937px;
     height: 512px;
@@ -262,7 +245,7 @@ main>section.eventos>article>picture {
 }
 
 footer {
-    width: 1920px;
+    width: 100%;
     height: 498px;
     background: #E8E8E8;
 }
