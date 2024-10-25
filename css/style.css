@@ -330,6 +330,7 @@ footer>.grid-container>div.foz-do-iguacu {
     flex-shrink: 0;
     height: fit-content;
     margin-top: 30px;
+    margin-right: 40px
 }
 
 footer>.grid-container>div.foz-do-iguacu>h3 {
@@ -395,8 +396,14 @@ footer>.grid-container>div.sobre>a {
 }
 
 .redes-sociais img {
-    width: 30px;
+    width: 40px;
     margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
 }
 
 .vl {
