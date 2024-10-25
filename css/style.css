@@ -248,7 +248,7 @@ footer {
     height: 498px;
     background: #E8E8E8;
     box-shadow: 0px 0px 170px 0px rgba(0, 0, 0, 0.10) inset;
-
+    height: fit-content;
 }
 
 .grid-container {
@@ -257,12 +257,15 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
-    gap: 50px;
-    height: 100%;
+    gap: 20px;
+    height: 70%;
+
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
 }
 
-.logo {
-    background-color: #A9D5EE; 
+.logo { 
     grid-row-start: 1;
     grid-column-start: 1;
  
@@ -272,7 +275,6 @@ footer {
 }
 
 .cascavel {
-    background-color: #B897DD; 
     grid-row-start: 1;
     grid-column-start: 4;
  
@@ -281,7 +283,6 @@ footer {
 }
 
 .foz-do-iguacu {
-    background-color: #A555DF; 
     grid-row-start: 1;
     grid-column-start: 5;
  
@@ -291,9 +292,10 @@ footer {
 
 footer>.grid-container>div.cascavel {
     width: 318px;
-    height: 225px;
     flex-shrink: 0;
     height: fit-content;
+    margin-top: 30px;
+    margin-right: 40px;
 }
 
 footer>.grid-container>div.cascavel>h3 {
@@ -325,9 +327,9 @@ footer>.grid-container>div.cascavel>p {
 
 footer>.grid-container>div.foz-do-iguacu {
     width: 300px;
-    height: 209px;
     flex-shrink: 0;
     height: fit-content;
+    margin-top: 30px;
 }
 
 footer>.grid-container>div.foz-do-iguacu>h3 {
@@ -358,10 +360,8 @@ footer>.grid-container>div.sobre {
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
-    grid-column: 1 / 4;
     text-align: center;
-    margin-top: 20px;
-    background-color: #acd5ba; 
+    margin-top: 40px;
     grid-row-start: 3;
     grid-column-start: 1;
  
@@ -369,7 +369,6 @@ footer>.grid-container>div.sobre {
     grid-column-end: 7;
 
     height: fit-content;
-
 }
 
 footer>.grid-container>div.sobre>p {
@@ -386,8 +385,7 @@ footer>.grid-container>div.sobre>a {
     line-height: 21px;
 }
 
-.redes-sociais {
-    background-color: #676dfe; 
+.redes-sociais { 
     height: fit-content;
     grid-row-start: 1;
     grid-column-start: 6;
@@ -395,7 +393,7 @@ footer>.grid-container>div.sobre>a {
     grid-row-end: 3;
     grid-column-end: 7;
 }
-
+  
 .redes-sociais img {
     width: 30px;
     margin: 0 10px;
@@ -405,7 +403,7 @@ footer>.grid-container>div.sobre>a {
     border-left: 2px solid var(--cor-cinza-escuro);
     height: 100%;
     width: 1px;
-    margin: 0 20px;
+    margin-left: 50px;
 
     grid-row-start: 1;
     grid-column-start: 3;
