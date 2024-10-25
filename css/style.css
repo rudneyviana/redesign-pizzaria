@@ -245,7 +245,7 @@ main>section.eventos>picture {
 }
 
 footer {
-    width: 100%;
+    width: 1920px;
     height: 498px;
     background: #E8E8E8;
 }
@@ -306,4 +306,13 @@ footer>div.foz-do-iguacu>p {
     font-weight: 400;
     line-height: 21px;
     /* 131.25% */
+}
+
+footer>div>.sobre {
+    color: var(--color-grey-37, #605E5E);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
 }
