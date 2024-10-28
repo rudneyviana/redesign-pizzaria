@@ -67,7 +67,7 @@ header>nav>a {
 
 main {
     width: 100%;
-    height: 4886px;
+    height: fit-content;
 }
 
 main>section.header {
@@ -195,24 +195,32 @@ main>section.info>div>article>p {
 }
 
 main>section.eventos {
+    display: flex;
     width: 100%;
-    height: fit-content;
+    /* padding: 40px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .container-eventos {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     align-self: stretch;
 }
 
 .container-eventos>article {
-    width: 722px;
-    height: 522px;
     display: flex;
+    width: 50%;
+    margin-left: 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .container-eventos>article>h2 {
@@ -224,28 +232,84 @@ main>section.eventos {
 }
 
 .container-eventos>article>p {
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0px;
     color: var(--cor-preto);
     text-align: center;
     font-family: var(--font-sans-serif-01);
-    font-size: 18px;
-    line-height: 25px;
-    /* 138.889% */
 }
 
 .container-botoes {
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    align-items: center;
+}
+
+.picture-01 {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.picture-02 {
+    display: flex;
+    width: 50%;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+}
+
+.picture-02>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.picture-03 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.picture-03>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.foto-01 {
     width: 100%;
 }
 
-.container-eventos>picture {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1937px;
-    height: 512px;
+.foto-02 {
+    width: 50%;
+}
+
+.foto-03 {
+    width: 50%;
+}
+
+.foto-04 {
+    width: 50px;
+}
+
+.foto-05 {
+    width: 50px;
+}
+
+.foto-06 {
+    width: 50%;
+}
+
+.foto-07 {
+    width: 50%;
 }
 
 footer {
@@ -277,6 +341,10 @@ footer {
     grid-row-end: 3;
     grid-column-end: 3;
     height: fit-content;
+}
+
+.logo>img {
+    width: 100%;
 }
 
 .cascavel {
