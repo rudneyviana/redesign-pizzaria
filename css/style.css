@@ -147,9 +147,42 @@ main>section.principal>div.destaque>article>p {
     font-family: var(--font-serifada-01);
 }
 
-main>section.pratos {}
+/*SECTION PRATOS*/
+main>section.pratos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-/*FALTA FAZER*/
+section.pratos>img {
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+section.pratos>.pratos-populares {
+    width: 608px;
+    margin: auto;
+}
+
+section.pratos>.pratos-populares>p {
+    color: var(--cor-dourado);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+section.pratos>.pratos-populares>h2 {
+    color: var(--cor-preto);
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 81.304px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 79px;
+    width: fit-content;
+}
 
 /*CARROSSEL ESQUERDA ABAIXO*/
 .carrossel-pizzas>.carrossel-esquerda>.item>.descriçao-carrossel>h3 {
