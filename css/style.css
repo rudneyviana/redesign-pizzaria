@@ -26,7 +26,7 @@ a {
 
 .pagina-selecionada {
     color: var(--cor-vermelho);
-    text-decoration: underline;
+    border-bottom: 3px solid;
 }
 
 header {
