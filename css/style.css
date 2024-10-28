@@ -151,6 +151,202 @@ main>section.pratos {}
 
 /*FALTA FAZER*/
 
+/*CARROSSEL ESQUERDA ABAIXO*/
+.carrossel-pizzas>.carrossel-esquerda>.item>.descriçao-carrossel>h3 {
+    color: var(--cor-vermelho-escuro);
+    font-family: var(--font-serifada-01);
+    font-size: 25.396px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.642px; /* 132.468% */
+}
+
+.carrossel-pizzas>.carrossel-esquerda>.item>img {
+    border-radius: 12px;
+}
+
+
+.carrossel-pizzas>.carrossel-esquerda>.item {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    padding: 10px 15px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.carrossel-pizzas>.carrossel-esquerda>.item>.descriçao-carrossel>p {
+    display: flex;
+    width: 161.556px;
+    height: 56.416px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: var(--color-black-solid, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.079px; /* 144.247% */
+}
+
+.carrossel-pizzas>.carrossel-esquerda>.item>.descriçao-carrossel {
+    display: flex;
+    flex-direction: column; /* Empilha o título e parágrafo verticalmente */
+    justify-content: center; /* Centraliza verticalmente dentro do espaço disponível */
+    gap: 5px; /* Espaço entre o título e a descrição */
+    flex: 1; /* Faz a div ocupar o espaço restante */
+}
+
+/*CARROSSEL DIREITA ABAIXO*/
+.carrossel-pizzas>.carrossel-direita>.item>.descriçao-carrossel>h3 {
+    color: var(--cor-vermelho-escuro);
+    font-family: var(--font-serifada-01);
+    font-size: 25.396px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.642px; /* 132.468% */
+}
+
+.carrossel-pizzas>.carrossel-direita>.item>img {
+    border-radius: 12px;
+}
+
+.carrossel-pizzas>.carrossel-direita>.item {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    padding: 10px 15px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.carrossel-pizzas>.carrossel-direita>.item>.descriçao-carrossel>p {
+    display: flex;
+    width: 161.556px;
+    height: 56.416px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: var(--color-black-solid, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.079px; /* 144.247% */
+}
+
+.carrossel-pizzas>.carrossel-direita>.item>.descriçao-carrossel {
+    display: flex;
+    flex-direction: column; /* Empilha o título e parágrafo verticalmente */
+    justify-content: center; /* Centraliza verticalmente dentro do espaço disponível */
+    gap: 5px; /* Espaço entre o título e a descrição */
+    flex: 1; /* Faz a div ocupar o espaço restante */
+}
+
+/*FUNCIONAMENTO DO CARROSSEL ESQUERDO ABAIXO*/
+.carrossel-pizzas>.carrossel-esquerda {
+    width: 90%;
+    max-width: 1700px;
+    margin-inline: auto;
+    position: relative;
+    height: 210px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,1) 90%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollEsquerda {
+    to {
+        left: -518.55px;
+    }
+}
+
+.carrossel-esquerda>.item {
+    position: absolute;
+    left: calc(200px * 8);
+    animation-name: scrollEsquerda;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.esq-1 {
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.esq-2 {
+    animation-delay: calc(30s / 4 * (4 - 2) * -1); 
+}
+
+.esq-3 {
+    animation-delay: calc(30s / 4 * (4 - 3) * -1); 
+}
+
+.esq-4 {
+    animation-delay: calc(30s / 4 * (4 - 4) * -1); 
+}
+
+/*FUNCIONAMENTO DO CARROSSEL DIREITA ABAIXO*/
+.carrossel-pizzas>.carrossel-direita {
+    width: 90%;
+    max-width: 1700px;
+    margin-inline: auto;
+    position: relative;
+    height: 210px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,1) 90%,
+        rgba(0,0,0,0)
+    );
+}
+
+@keyframes scrollDireita {
+    to {
+        right: -518.55px;
+    }
+}
+
+.carrossel-direita>.item {
+    position: absolute;
+    right: calc(200px * 8);
+    animation-name: scrollDireita;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.dir-1 {
+    animation-delay: calc(30s / 4 * (4 - 1) * -1);
+}
+
+.dir-2 {
+    animation-delay: calc(30s / 4 * (4 - 2) * -1); 
+}
+
+.dir-3 {
+    animation-delay: calc(30s / 4 * (4 - 3) * -1); 
+}
+
+.dir-4 {
+    animation-delay: calc(30s / 4 * (4 - 4) * -1); 
+}
+
+
+
+
 main>section.info {
     width: 100%;
     display: flex;
