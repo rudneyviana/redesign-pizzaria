@@ -392,7 +392,8 @@ main>section.eventos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    margin-bottom: 50px;
 }
 
 .container-eventos {
@@ -401,7 +402,6 @@ main>section.eventos {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 50px;
 }
 
 .container-eventos>article {
@@ -426,6 +426,7 @@ main>section.eventos {
     color: var(--cor-preto);
     text-align: center;
     font-family: var(--font-sans-serif-01);
+    margin: 0px 100px;
 }
 
 .container-botoes {
