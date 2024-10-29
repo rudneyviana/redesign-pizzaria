@@ -60,6 +60,16 @@ header>nav>a {
     align-items: center;
 }
 
+header>nav>a:hover {
+    color: var(--cor-vermelho);
+    border-bottom: 3px solid var(--cor-vermelho);
+}
+
+header>nav>a:active {
+    color: var(--cor-vermelho-escuro);
+    border-bottom: 3px solid var(--cor-vermelho-escuro);
+}
+
 .transicao-olivas {
     width: 100%;
     padding-bottom: 5%;
@@ -137,6 +147,15 @@ main>section.principal>div.destaque>article>p {
     font-size: 40px;
     font-weight: 700;
     border: none;
+}
+
+.botao-link:hover {
+    background: #dd0b35;
+    cursor: pointer;
+}
+
+.botao-link:active {
+    background-color: #ec1842;
 }
 
 .link-borda {
