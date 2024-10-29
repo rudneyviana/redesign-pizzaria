@@ -554,11 +554,15 @@ main>section.eventos {
 .foto-04 {
     width: 300px;
     height: 410px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .foto-05 {
     width: 300px;
     height: 410px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .foto-06 {
