@@ -241,6 +241,7 @@ section.pratos>.pratos-populares>h2 {
     font-style: normal;
     font-weight: 700;
     line-height: 33.642px; /* 132.468% */
+    width: max-content;
 }
 
 .carrossel-pizzas>.carrossel-direita>.item>img {
