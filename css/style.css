@@ -59,6 +59,7 @@ header>nav {
 }
 
 header>nav>a {
+    transition: 0.18s;
     display: flex;
     padding: 3px 5px 2px 5px;
     justify-content: center;
@@ -486,6 +487,7 @@ main>section.eventos {
     text-align: center;
     font-family: var(--font-sans-serif-01);
     margin: 0px 100px;
+    margin-bottom: 15px;
 }
 
 .container-botoes {
