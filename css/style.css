@@ -113,12 +113,7 @@ main>section.principal>div.destaque {
     height: fit-content;
     display: flex;
     justify-content: space-between;
-    margin-left: 9%;
-}
-
-main>section.principal>div.destaque>img {
-    min-width: 700px;
-    height: 650px;
+    margin-left: 5%;
 }
 
 main>section.principal>div.destaque>article {
@@ -132,7 +127,7 @@ main>section.principal>div.destaque>article {
 main>section.principal>div.destaque>article>h1 {
     color: var(--cor-vermelho-escuro);
     font-family: var(--font-serifada-01);
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -174,6 +169,11 @@ main>section.principal>div.destaque>article>p {
     color: var(--cor-branco);
     text-align: center;
     font-family: var(--font-serifada-01);
+}
+
+main>section.principal>div.destaque>img {
+    width: 730px;
+    height: 650px;
 }
 
 /*SECTION PRATOS*/
