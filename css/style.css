@@ -588,8 +588,8 @@ footer {
 .grid-container {
     display: grid;
 
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     gap: 20px;
     height: 70%;
@@ -755,4 +755,57 @@ footer>.grid-container>div.sobre>a {
 
     grid-row-end: 3;
     grid-column-end: 4;
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+
+@media screen and (max-width: 700px) {
+    main>section.principal {
+        height: auto;
+    }
+
+    main>section.principal>div.destaque {
+        width: 100%;
+        margin: 20px 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main>section.principal>div.destaque>img {
+        display: none;
+    }
+
+    main>section.principal>div.destaque>article>h1 {
+        font-size: 60px;
+    }
+
+    .container-transicao {
+        width: 100%;
+    }
+
+    .transicao-olivas {
+        width: 1000px;
+        object-fit: cover;
+        object-position: 100% 0;
+    }
+
+    main>section.info>div>im {
+
+    }
+
+    section.pratos>.pratos-populares {
+        margin: 0px 30px;
+    }
+
+    main>section.info>div>article {
+        width: 50%;
+    }
+
+    main>section.info>div>article {
+        width: 50%;
+    }
+
+    main>section.info>div>article>h2 {
+        font-size: 50px;
+    }
 }
