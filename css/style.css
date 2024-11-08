@@ -344,15 +344,15 @@ section.pratos>.pratos-populares>h2 {
 }
 
 .esq-2 {
-    animation-delay: calc(30s / 4 * (4 - 2) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
 }
 
 .esq-3 {
-    animation-delay: calc(30s / 4 * (4 - 3) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
 }
 
 .esq-4 {
-    animation-delay: calc(30s / 4 * (4 - 4) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
 }
 
 /*FUNCIONAMENTO DO CARROSSEL DIREITA ABAIXO*/
@@ -393,15 +393,15 @@ section.pratos>.pratos-populares>h2 {
 }
 
 .dir-2 {
-    animation-delay: calc(30s / 4 * (4 - 2) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 2) * -1);
 }
 
 .dir-3 {
-    animation-delay: calc(30s / 4 * (4 - 3) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 3) * -1);
 }
 
 .dir-4 {
-    animation-delay: calc(30s / 4 * (4 - 4) * -1); 
+    animation-delay: calc(30s / 4 * (4 - 4) * -1);
 }
 
 
@@ -787,10 +787,6 @@ footer>.grid-container>div.sobre>a {
         width: 1000px;
         object-fit: cover;
         object-position: 100% 0;
-    }
-
-    main>section.info>div>im {
-
     }
 
     section.pratos>.pratos-populares {
